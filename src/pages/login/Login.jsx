@@ -6,14 +6,14 @@ const Login = () => {
     <div className='login'>
       <div className='card'>
         <div className='left'>
-          <h1>Hello</h1>
+          <h1>Hello World.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             mollitia iste aliquam reprehenderit ut sunt maxime, doloribus error
             velit fugiat!
           </p>
           <span>Don't you have an account?</span>
-          <button>register</button>
+          <button>Register</button>
         </div>
         <div className='right'>
           <h1>Login</h1>
