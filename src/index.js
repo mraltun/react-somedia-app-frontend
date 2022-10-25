@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { DarkModeContextProvider } from "./context/darkModeContext";
 import App from "./App";
+import { AuthContextProvider } from "./context/authContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <DarkModeContextProvider>
-      <App />
+      <AuthContextProvider>
+        <App />
+      </AuthContextProvider>
     </DarkModeContextProvider>
   </React.StrictMode>
 );
