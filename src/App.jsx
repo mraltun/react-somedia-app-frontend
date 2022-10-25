@@ -13,6 +13,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
+import "./style.scss";
 
 const App = () => {
   // Temporary login
@@ -20,7 +21,7 @@ const App = () => {
 
   const Layout = () => {
     return (
-      <div>
+      <div className='theme-dark'>
         <Navbar />
         <div style={{ display: "flex" }}>
           <LeftBar />
