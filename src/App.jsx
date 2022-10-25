@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,14 +14,17 @@ import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import "./style.scss";
+import { DarkModeContext } from "./context/darkModeContext";
 
 const App = () => {
   // Temporary login
   const currentUser = true;
 
+  const { darkMode } = useContext(DarkModeContext);
+
   const Layout = () => {
     return (
-      <div className='theme-dark'>
+      <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar />
         <div style={{ display: "flex" }}>
           <LeftBar />
